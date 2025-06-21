@@ -1,200 +1,230 @@
 {
-   // একই ট্যাগ বা কোডের অংশ পরিবর্তনে একইসাথে পরিবর্তন (HTML/XML এ কার্যকর)
-   "editor.linkedEditing": true,
- 
-   // কোড ফাইল স্বয়ংক্রিয়ভাবে নির্দিষ্ট সময় পর পর সেভ হবে
-   "files.autoSave": "afterDelay",
- 
-   // অটো সেভ কত সময় পর হবে, এখানে ১০০ মিলিসেকেন্ড (0.1 সেকেন্ড)
-   "files.autoSaveDelay": 100,
- 
-   // একটি ট্যাবে কত স্পেস থাকবে (এখানে ৩ স্পেস)
-   "editor.tabSize": 3,
- 
-   // লম্বা লাইনগুলো পরের লাইনে স্বয়ংক্রিয়ভাবে আসবে
-   "editor.wordWrap": "on",
- 
-   // **Typescript ও React ফাইলের ফরম্যাটার সেটিংস**
- 
-   // টাইপস্ক্রিপ্টের জন্য Prettier ফরম্যাটার ব্যবহার হবে
-   "[typescript]": {
-     "editor.defaultFormatter": "esbenp.prettier-vscode"
-   },
- 
-   // টাইপস্ক্রিপ্ট React (tsx) এর জন্য Prettier ফরম্যাটার ব্যবহার হবে
-   "[typescriptreact]": {
-     "editor.defaultFormatter": "esbenp.prettier-vscode"
-   },
- 
-   // **Git সম্পর্কিত সেটিংস**
- 
-   // Git-এ push/pull করার সময় বারবার নিশ্চিত করা বন্ধ
-   "git.confirmSync": false,
- 
-   // স্বয়ংক্রিয়ভাবে commit এর সময় Git-এ Push করতে সক্ষম করে
-   "git.enableSmartCommit": true,
- 
-   "highlight-matching-tag.styles": {
-     "opening": {
-       "name": {
-         "highlight": "#f8f2f0" // Gold color for opening tag name
-       }
-     },
-     "closing": {
-       "name": {
-         "highlight": "#f8f2f0" // Sky blue color for closing tag name
-       }
-     }
-   },
- 
-   // **টার্মিনাল সেটিংস**
- 
-   // Windows-এ ডিফল্ট টার্মিনাল হিসেবে Git Bash ব্যবহৃত হবে
-   "terminal.integrated.defaultProfile.windows": "Git Bash",
- 
-   // **কোড লিখতে সাহায্যকারী AI (Cody/inline suggestion) সেটিংস**
- 
-   // ইনলাইন সাজেশন কম দেখানো হবে
-   "editor.inlineSuggest.suppressSuggestions": true,
- 
-   // Cody AI-এর সাজেশন মোড অটো এডিটিং
-   "cody.suggestions.mode": "auto-edit",
- 
-   // Inline চ্যাটে ফাঁকা লাইনে সাজেশনের হিন্ট দেখানো হবে
-   "inlineChat.lineEmptyHint": true,
- 
-   // **ফাইল মুভ করার সময় imports স্বয়ংক্রিয় আপডেট হবে**
- 
-   "typescript.updateImportsOnFileMove.enabled": "always",
-   "javascript.updateImportsOnFileMove.enabled": "always",
- 
-   // **কার্সর সেটিংস**
- 
-   // কার্সর অ্যানিমেশন মসৃণ হবে
-   "editor.cursorSmoothCaretAnimation": "on",
- 
-   // কার্সরের blinking স্টাইল expand হবে (কার্সর ধীরে বড় হবে আবার ছোট হবে)
-   "editor.cursorBlinking": "expand",
- 
-   // **ডিফল্ট কোড ফরম্যাটার এবং সেভের সময় ফরম্যাটিং**
- 
-   // ডিফল্ট ফরম্যাটার হিসেবে Prettier ব্যবহার হবে
-   "editor.defaultFormatter": "esbenp.prettier-vscode",
- 
-   // সব ফাইলে সেভ করার সময় ফরম্যাটিং হবে
-   "editor.formatOnSave": true,
- 
-   // JavaScript ও JSX ফাইলে সেভের সময় ফরম্যাটিং বন্ধ রাখা হয়েছে
-   "[javascript]": {
-     "editor.formatOnSave": false,
-     "editor.defaultFormatter": "esbenp.prettier-vscode"
-   },
-   "[javascriptreact]": {
-     "editor.formatOnSave": false,
-     "editor.defaultFormatter": null
-   },
- 
-   // **সেভের সময় কোড অ্যাকশন সেটিংস**
- 
-   "editor.codeActionsOnSave": {
-     "source.fixAll.eslint": "explicit",
-     "source.fixAll.tslint": "explicit",
-     "source.organizeImports": "explicit"
-   },
- 
-   // ESLint-এর স্ট্যাটাস সবসময় দেখানো হবে
-   "eslint.alwaysShowStatus": true,
- 
-   // VS Code-এর আইকন থিম
-   "workbench.iconTheme": "vscode-icons",
- 
-   // ব্র্যাকেট কালার করে (Nested Structure পড়া সহজ)
-   "editor.bracketPairColorization.enabled": true,
-   "editor.guides.bracketPairs": "active",
- 
-   // স্মুথ স্ক্রলিং (Scrolling সুন্দরভাবে চলবে)
-   "editor.smoothScrolling": true,
- 
-   // ইনলাইন সাজেশন চালু (AI ইনলাইন হেল্প)
-   "editor.inlineSuggest.enabled": true,
- 
-   // পরিবর্তিত লাইন হাইলাইট (Modified Code বুঝতে সহজ)
-   "workbench.editor.decorations.badges": true,
-   "workbench.editor.decorations.colors": true,
- 
-   // পেস্ট করলে বাইরের ফরম্যাট থাকবে না (Cleaner Paste)
-   "editor.formatOnPaste": false,
-   "zenMode.hideActivityBar": true,
-   "zenMode.hideStatusBar": true,
-   "zenMode.fullScreen": false,
- 
-   // ব্র্যাকেট ও কোটস অটো ক্লোজ হবে
-   "editor.autoClosingBrackets": "always",
-   "editor.autoClosingQuotes": "always",
- 
-   // টাইপস্ক্রিপ্ট ও জাভাস্ক্রিপ্টে ইমপোর্ট স্টাইল ঠিক করা
-   "typescript.preferences.importModuleSpecifier": "relative",
-   "javascript.preferences.importModuleSpecifier": "relative",
- 
-   // Error Lens (Extension লাগবে, ভুল লাইনে দেখাবে)
-   "errorLens.enabled": true,
-   "errorLens.addAnnotationBackground": true, // ✅ Enable background color!
-   "errorLens.background": "ansiRed",
-   "errorLens.fontWeight": "600",
-   "errorLens.fontSize": "12",
- 
-   "workbench.colorTheme": "Visual Studio Dark",
-   "workbench.colorCustomizations": {
-     // Title bar customizations
-     "window.titleBarStyle": "custom",
-     "titleBar.activeBackground": "#060609", // অ্যাকটিভ উইন্ডোর ব্যাকগ্রাউন্ড কালার
-     "titleBar.activeForeground": "#cbccd0", // অ্যাকটিভ টেক্সট কালার (File, Edit ইত্যাদি)
-     "titleBar.inactiveBackground": "#2b2b3d", // ইনঅ্যাকটিভ উইন্ডো  ব্যাকগ্রাউন্ড
-     "titleBar.inactiveForeground": "#f5f5f5", // ইনঅ্যাকটিভ টেক্সট কালার
- 
-     // Editor colors
-     "editor.background": "#000", // এডিটরের ব্যাকগ্রাউন্ড কালার
-     "editor.foreground": "#d4d4d4", // লেখার রঙ (VS Code Default #d4d4d4)
-     "editorCursor.foreground": "#50d7fc", // কার্সরের রঙ
-     "editor.lineHighlightBackground": "#2b2b36", // যেই লাইনে আছেন সেটার ব্যাকগ্রাউন্ড
- 
-     // Activity bar colors
-     "activityBar.background": "#0a0a1a", // এক্টিভিটি বারের ব্যাকগ্রাউন্ড রঙ
-     "activityBar.foreground": "#ffffff", // এক্টিভিটি বারের টেক্সট রঙ
- 
-     // Side bar colors
-     "sideBar.background": "#080816", // সাইডবারের ব্যাকগ্রাউন্ড রঙ
- 
-     // Tab colors
-     "tab.activeBackground": "#000000", // একটিভ ট্যাবের ব্যাকগ্রাউন্ড রঙ
-     "tab.inactiveBackground": "#292a2f", // ইনঅ্যাকটিভ ট্যাবের ব্যাকগ্রাউন্ড
- 
-     // Terminal custom color settings
-     "terminal.background": "#000000", // টার্মিনালের ব্যাকগ্রাউন্ড রঙ
-     "terminal.foreground": "#d4d4d4", // টার্মিনালের লেখার রঙ (VS Code Default #d4d4d4)
-     "terminalCursor.background": "#A89984", // টার্মিনাল কার্সরের ব্যাকগ্রাউন্ড
-     "terminalCursor.foreground": "#13c4fa", // টার্মিনাল কার্সরের রঙ
- 
-     // Terminal ANSI colors (output and command colors)
-     "terminal.ansiBlack": "#1D2021",
-     "terminal.ansiBlue": "#04819a",
-     "terminal.ansiBrightBlack": "#665C54",
-     "terminal.ansiBrightBlue": "#0D6678",
-     "terminal.ansiBrightCyan": "#8BA59B",
-     "terminal.ansiBrightGreen": "#95C085",
-     "terminal.ansiBrightMagenta": "#8F4673",
-     "terminal.ansiBrightRed": "#FB543F",
-     "terminal.ansiBrightWhite": "#FDF4C1",
-     "terminal.ansiBrightYellow": "#FAC03B",
-     "terminal.ansiCyan": "#8BA59B",
-     "terminal.ansiGreen": "#049a01",
-     "terminal.ansiMagenta": "#9f0364",
-     "terminal.ansiRed": "#FB543F",
-     "terminal.ansiWhite": "#039ab5",
-     "terminal.ansiYellow": "#15a3eb"
-   },
-   "gitlens.ai.model": "vscode",
-   "gitlens.ai.vscode.model": "copilot:gpt-4",
-   "security.workspace.trust.untrustedFiles": "open"
- }
- 
+  // একই ট্যাগ বা কোডের অংশ পরিবর্তনে একইসাথে পরিবর্তন (HTML/XML এ কার্যকর)
+  "editor.linkedEditing": true,
+
+  // কোড ফাইল স্বয়ংক্রিয়ভাবে নির্দিষ্ট সময় পর পর সেভ হবে
+  "files.autoSave": "afterDelay",
+
+  // অটো সেভ কত সময় পর হবে, এখানে ১০০ মিলিসেকেন্ড (0.1 সেকেন্ড)
+  "files.autoSaveDelay": 100,
+
+  // একটি ট্যাবে কত স্পেস থাকবে (এখানে ৩ স্পেস)
+  "editor.tabSize": 3,
+
+  // লম্বা লাইনগুলো পরের লাইনে স্বয়ংক্রিয়ভাবে আসবে
+  "editor.wordWrap": "on",
+
+  // **Typescript ও React ফাইলের ফরম্যাটার সেটিংস**
+
+  // টাইপস্ক্রিপ্টের জন্য Prettier ফরম্যাটার ব্যবহার হবে
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // টাইপস্ক্রিপ্ট React (tsx) এর জন্য Prettier ফরম্যাটার ব্যবহার হবে
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // **Git সম্পর্কিত সেটিংস**
+
+  // Git-এ push/pull করার সময় বারবার নিশ্চিত করা বন্ধ
+  "git.confirmSync": false,
+
+  // স্বয়ংক্রিয়ভাবে commit এর সময় Git-এ Push করতে সক্ষম করে
+  "git.enableSmartCommit": true,
+
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "name": {
+        "highlight": "#f8f2f0" // Gold color for opening tag name
+      }
+    },
+    "closing": {
+      "name": {
+        "highlight": "#f8f2f0" // Sky blue color for closing tag name
+      }
+    }
+  },
+
+  // **টার্মিনাল সেটিংস**
+
+  // Windows-এ ডিফল্ট টার্মিনাল হিসেবে Git Bash ব্যবহৃত হবে
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // **কোড লিখতে সাহায্যকারী AI (Cody/inline suggestion) সেটিংস**
+
+  // ইনলাইন সাজেশন কম দেখানো হবে
+  "editor.inlineSuggest.suppressSuggestions": true,
+
+  // Cody AI-এর সাজেশন মোড অটো এডিটিং
+  "cody.suggestions.mode": "autocomplete",
+
+  // Inline চ্যাটে ফাঁকা লাইনে সাজেশনের হিন্ট দেখানো হবে
+  "inlineChat.lineEmptyHint": true,
+
+  // **ফাইল মুভ করার সময় imports স্বয়ংক্রিয় আপডেট হবে**
+
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // **কার্সর সেটিংস**
+
+  // কার্সর অ্যানিমেশন মসৃণ হবে
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  // কার্সরের blinking স্টাইল expand হবে (কার্সর ধীরে বড় হবে আবার ছোট হবে)
+  "editor.cursorBlinking": "expand",
+
+  // **ডিফল্ট কোড ফরম্যাটার এবং সেভের সময় ফরম্যাটিং**
+
+  // ডিফল্ট ফরম্যাটার হিসেবে Prettier ব্যবহার হবে
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // সব ফাইলে সেভ করার সময় ফরম্যাটিং হবে
+  "editor.formatOnSave": true,
+
+  // JavaScript ও JSX ফাইলে সেভের সময় ফরম্যাটিং বন্ধ রাখা হয়েছে
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+
+  // **সেভের সময় কোড অ্যাকশন সেটিংস**
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.tslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // ESLint-এর স্ট্যাটাস সবসময় দেখানো হবে
+  "eslint.alwaysShowStatus": true,
+
+  // VS Code-এর আইকন থিম
+  "workbench.iconTheme": "vscode-icons",
+
+  // ব্র্যাকেট কালার করে (Nested Structure পড়া সহজ)
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+
+  // স্মুথ স্ক্রলিং (Scrolling সুন্দরভাবে চলবে)
+  "editor.smoothScrolling": true,
+
+  // ইনলাইন সাজেশন চালু (AI ইনলাইন হেল্প)
+  "editor.inlineSuggest.enabled": true,
+
+  // পরিবর্তিত লাইন হাইলাইট (Modified Code বুঝতে সহজ)
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": true,
+
+  // পেস্ট করলে বাইরের ফরম্যাট থাকবে না (Cleaner Paste)
+  "editor.formatOnPaste": false,
+  "zenMode.hideActivityBar": true,
+  "zenMode.hideStatusBar": true,
+  "zenMode.fullScreen": false,
+
+  // ব্র্যাকেট ও কোটস অটো ক্লোজ হবে
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+
+  // টাইপস্ক্রিপ্ট ও জাভাস্ক্রিপ্টে ইমপোর্ট স্টাইল ঠিক করা
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifier": "relative",
+
+  // Error Lens (Extension লাগবে, ভুল লাইনে দেখাবে)
+  "errorLens.enabled": true,
+  "errorLens.addAnnotationBackground": true, // ✅ Enable background color!
+  "errorLens.background": "ansiRed",
+  "errorLens.fontWeight": "600",
+  "errorLens.fontSize": "12",
+
+  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorCustomizations": {
+    // Title bar customizations
+    "window.titleBarStyle": "custom",
+    "titleBar.activeBackground": "#060609", // অ্যাকটিভ উইন্ডোর ব্যাকগ্রাউন্ড কালার
+    // "titleBar.border": "#11c9fc", // অ্যাকটিভ উইন্ডোর ব্যাকগ্রাউন্ড কালার
+    "titleBar.activeForeground": "#cbccd0", // অ্যাকটিভ টেক্সট কালার (File, Edit ইত্যাদি)
+    "titleBar.inactiveBackground": "#2b2b3d", // ইনঅ্যাকটিভ উইন্ডো  ব্যাকগ্রাউন্ড
+    "titleBar.inactiveForeground": "#f5f5f5", // ইনঅ্যাকটিভ টেক্সট কালার
+
+    // Editor colors
+    "editor.background": "#000", // এডিটরের ব্যাকগ্রাউন্ড কালার
+    "editor.foreground": "#d4d4d4", // লেখার রঙ (VS Code Default #d4d4d4)
+    "editorCursor.foreground": "#11c9fc", // কার্সরের রঙ
+    "editor.lineHighlightBackground": "#2b2b36", // যেই লাইনে আছেন সেটার ব্যাকগ্রাউন্ড
+
+    // Activity bar colors
+    "activityBar.background": "#080816", // এক্টিভিটি বারের ব্যাকগ্রাউন্ড রঙ
+    "activityBar.foreground": "#ffffff", // এক্টিভিটি বারের টেক্সট রঙ
+    "activityBar.border": "#12a0f8", // এক্টিভিটি বারের টেক্সট রঙ
+    "activityBar.activeBorder": "#12a0f8", // এক্টিভিটি বারের টেক্সট রঙ
+    "activityBar.": "#12a0f8", // এক্টিভিটি বারের টেক্সট রঙ
+
+    // Side bar colors
+    "sideBar.background": "#080816", // সাইডবারের ব্যাকগ্রাউন্ড রঙ
+    "sideBar.border": "#12a0f8", // সাইডবারের বর্ডার
+    "sideBySideEditor.verticalBorder": "#12a0f8", // সাইডবারের বর্ডার
+    "scrollbarSlider.background": "#0569a8",
+    "scrollbarSlider.hoverBackground": "#0569a7",
+    "scrollbarSlider.activeBackground": "#53b9f9",
+
+    // Tab colors
+    "tab.activeBackground": "#000000", // একটিভ ট্যাবের ব্যাকগ্রাউন্ড রঙ
+    "tab.activeBorder": "#0790e5", // একটিভ বর্ডার ব্যাকগ্রাউন্ড রঙ
+    "tab.activeBorderTop": "#12a0f8", // একটিভ বর্ডার ব্যাকগ্রাউন্ড রঙ
+    "tab.inactiveBackground": "#292a2f", // ইনঅ্যাকটিভ ট্যাবের ব্যাকগ্রাউন্ড
+    "tab.border": "#47a0f9", //  ট্যাবের বর্ডার
+
+    // Terminal custom color settings
+    "terminal.background": "#000000", // টার্মিনালের ব্যাকগ্রাউন্ড রঙ
+    "terminal.foreground": "#d4d4d4", // টার্মিনালের লেখার রঙ (VS Code Default #d4d4d4)
+    "terminalCursor.background": "#A89984", // টার্মিনাল কার্সরের ব্যাকগ্রাউন্ড
+    "terminalCursor.foreground": "#13c4fa", // টার্মিনাল কার্সরের রঙ
+
+    // Terminal ANSI colors (output and command colors)
+    "terminal.ansiBlack": "#1D2021",
+    "terminal.ansiBlue": "#04819a",
+    "terminal.ansiBrightBlack": "#665C54",
+    "terminal.ansiBrightBlue": "#0D6678",
+    "terminal.ansiBrightCyan": "#8BA59B",
+    "terminal.ansiBrightGreen": "#95C085",
+    "terminal.ansiBrightMagenta": "#8F4673",
+    "terminal.ansiBrightRed": "#FB543F",
+    "terminal.ansiBrightWhite": "#FDF4C1",
+    "terminal.ansiBrightYellow": "#FAC03B",
+    "terminal.ansiCyan": "#8BA59B",
+    "terminal.ansiGreen": "#049a01",
+    "terminal.ansiMagenta": "#9f0364",
+    "terminal.ansiRed": "#FB543F",
+    "terminal.ansiWhite": "#039ab5",
+    "terminal.ansiYellow": "#15a3eb"
+  },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4",
+  "security.workspace.trust.untrustedFiles": "open",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "javascript": false
+  },
+  "cody.commandCodeLenses": true,
+  "[plaintext]": {
+    "editor.defaultFormatter": "lkrms.inifmt"
+  },
+
+  //customization
+  "vscode_custom_css.imports": [
+    "file:///C:/Users/Kamruzzaman/.vscode/customization"
+  ],
+  "vscode_custom_css.policy": true,
+  "githubPullRequests.pushBranch": "always",
+  "github.copilot.nextEditSuggestions.enabled": false
+}
